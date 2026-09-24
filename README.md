@@ -51,7 +51,9 @@
 
 ### World Models
 
-[Driving Policy trained in World Model Simulator](./world-models/comma-ai-driving-policy.md)
+[Driving Policy Trained On-Policy in World Model Simulator](./world-models/comma-ai-driving-policy.md)
+ - This is a writeup for https://blog.comma.ai/comma-hack-7/
+ - https://arxiv.org/pdf/2504.19077 has already done on-policy training. I focus on OPD from different teacher target.
 
 
 
