@@ -100,3 +100,20 @@ What I built gives me a way to investigate more specific questions: Where does t
 Comma’s existing driving policy was already a strong starting point. My hackathon experiment barely changed its measured performance, but building the loop changed my understanding of how such policies can be trained.
 
 I arrived wanting to fit more intelligence onto an 8 GB GPU. I left interested in how much computation and how much knowledge of the future. we can put into training a policy that fits there.
+
+
+## Quickstart for a demo `replay` with `modeld`
+
+```
+# UI
+BIG=1 python -m openpilot.selfdrive.ui.onroad.augmented_road_view
+
+
+# Replay
+openpilot/tools/replay/replay --demo --wide-road \
+                                                     --block modelV2,drivingModelData,cameraOdometry
+
+
+# Driving model
+python -m openpilot.selfdrive.modeld.modeld --demo
+```
